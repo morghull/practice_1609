@@ -28,12 +28,16 @@
               name="firstName"
               placeholder="First Name"
               class="input-text"
+              required
+              pattern="^[А-Яа-яA-Za-z]{1,32}$"
             />
             <input
               type="text"
               name="lastName"
               placeholder="Last Name"
               class="input-text"
+              required
+              pattern="^[А-Яа-яA-Za-z]{1,32}$"
             />
           </div>
           <input
@@ -41,21 +45,25 @@
             name="email"
             placeholder="Email"
             class="input-text"
+            required
+            pattern="^[A-Z0-9+_.-]+@[A-Z0-9.-]+$"
           />
           <input
             type="password"
             name="pass"
             placeholder="Password"
             class="input-text"
+            required
           />
           <input
             type="password"
             name="passConfirm"
             placeholder="Confirm Password"
             class="input-text"
+            required
           />
           <label class="terms-of-use">
-            <input type="checkbox" name="tersOfUse" class="input-check" />
+            <input type="checkbox" name="tersOfUse" class="input-check" required/>
             <span
               >I accept the <a href="">Terms of Use</a> &
               <a href="">Privacy Policy</a></span
