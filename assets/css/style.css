@@ -1,0 +1,113 @@
+:root {
+  --bg-color: rgb(87, 107, 145);
+  --reg-form-bg-color: rgba(255, 255, 255, 0.932);
+  --input-border-color: rgb(187, 187, 187);
+  --button-bg-color: rgb(42, 170, 42);
+  --font-color: gray;
+  --link-font-color: teal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrappper {
+  background-color: rgb(87, 107, 145);
+  padding-top: 50px;
+  height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.reg-section {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
+  padding: 20px 50px;
+  min-width: 500px;
+  width: 100%;
+  max-width: 500px;
+  color: var(--font-color);
+  background-color: var(--reg-form-bg-color);
+}
+.header-wrapper {
+  position: relative;
+}
+.section-header {
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  /* background-color: var(--reg-form-bg-color); */
+}
+.section-header::before,
+.section-header::after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 35%;
+  top: 50%;
+  position: absolute;
+  background-color: var(--font-color);
+}
+.section-header::before {
+  left: 0;
+}
+.section-header::after {
+  right: 0;
+}
+.section-help {
+  margin-top: 1em;
+  font-size: 0.8em;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  min-height: 50vh;
+  margin: auto;
+}
+form input[type="text"],
+form input[type="password"] {
+  padding: 0.8em 1em;
+  border: 1px solid rgb(187, 187, 187);
+}
+.user-name {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.user-name > input {
+  max-width: 47%;
+  flex: 1 1 120px;
+}
+.user-name > input + input {
+  /* margin-left: 1em; */
+}
+.terms-of-use {
+  font-size: 0.8em;
+}
+.terms-of-use a {
+  text-decoration: none;
+  color: teal;
+}
+form input[type="submit"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(42, 170, 42);
+  color: white;
+}
+.already-reg {
+  margin-top: 1em;
+  color: white;
+  text-align: center;
+}
+.already-reg > a {
+  color: inherit;
+}
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrappper">
+      <section class="reg-section">
+        <div class="header-wrapper">
+          <h1 class="section-header overflow">Register</h1>
+        </div>
+        <p class="section-help">
+          Create your account. It's free and only takes a minute
+        </p>
+        <form
+          action="/test"
+          method="GET"
+          enctype="multipart/form-data"
+          class="reg-form"
+        >
+          <div class="user-name">
+            <input
+              type="text"
+              name="firstName"
+              placeholder="First Name"
+              class="input-text"
+            />
+            <input
+              type="text"
+              name="lastName"
+              placeholder="Last Name"
+              class="input-text"
+            />
+          </div>
+          <input
+            type="text"
+            name="email"
+            placeholder="Email"
+            class="input-text"
+          />
+          <input
+            type="password"
+            name="pass"
+            placeholder="Password"
+            class="input-text"
+          />
+          <input
+            type="password"
+            name="passConfirm"
+            placeholder="Confirm Password"
+            class="input-text"
+          />
+          <label class="terms-of-use">
+            <input type="checkbox" name="tersOfUse" class="input-check" />
+            <span
+              >I accept the <a href="">Terms of Use</a> &
+              <a href="">Privacy Policy</a></span
+            >
+          </label>
+          <input type="submit" value="Register Now" />
+        </form>
+      </section>
+      <p class="already-reg">Already have an account? <a href="">Sign in</a></p>
+    </div>
+  </body>
+</html>
